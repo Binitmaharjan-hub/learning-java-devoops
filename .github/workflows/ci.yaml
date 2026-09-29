@@ -22,6 +22,9 @@ jobs:
           distribution: temurin
           java-version: '17'
           cache: maven
+      
+      - name: install maven
+        run: sudo apt update && sudo apt install maven -y
 
       - name: Check Java and Maven versions
         run: java -version && mvn -version
