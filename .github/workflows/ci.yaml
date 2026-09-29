@@ -10,7 +10,7 @@ jobs:
     name: Build Java app
     runs-on: self-hosted
     env:
-      IMAGE_NAME: binitmaharjan/github-action-learn-demo2
+      IMAGE_NAME: binitmaharjan/learning-java
 
     steps:
       - name: Checkout code
