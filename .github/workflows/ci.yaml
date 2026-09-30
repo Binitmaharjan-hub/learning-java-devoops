@@ -52,3 +52,6 @@ jobs:
       - name: deploying the container
         run: docker compose up -d --build && docker compose ps
 
+      - name: verify
+        run: curl -v http://localhost:8080
+
