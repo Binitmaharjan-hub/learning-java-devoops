@@ -50,5 +50,5 @@ jobs:
             ${{ env.IMAGE_NAME }}:${{ github.run_number }}
       
       - name: deploying the container
-        run: docker compose up -d --build
+        run: docker compose up -d --build && docker compose ps
 
