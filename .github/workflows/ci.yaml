@@ -53,5 +53,5 @@ jobs:
         run: docker compose up -d --build && docker compose ps
 
       - name: verify
-        run: curl -v http://localhost:8080
+        run: sleep 10 && curl -v http://localhost:8080
 
