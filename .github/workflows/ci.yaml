@@ -9,6 +9,7 @@ jobs:
   build:
     name: Build Java app
     runs-on: self-hosted
+    environment: values
     env:
       IMAGE_NAME: binitmaharjan/learning-java
 
